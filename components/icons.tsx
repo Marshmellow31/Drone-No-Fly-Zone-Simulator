@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const PlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -43,3 +42,17 @@ export const DroneIcon = (props: React.SVGProps<SVGSVGElement>) => (
       <path strokeLinecap="round" strokeLinejoin="round" d="M3 9v8.25m18-8.25V17.25" />
     </svg>
   );
+
+export const SpeedometerIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 15.91a4.5 4.5 0 01-6.32-6.32" />
+    </svg>
+);
+
+export const CompassIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 12l-1.5 4.5 4.5-1.5L12 6l-1.5 6z" />
+    </svg>
+);

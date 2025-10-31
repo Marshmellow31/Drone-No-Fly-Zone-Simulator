@@ -15,6 +15,7 @@ export const SCENARIOS: { [key: string]: Scenario } = {
       speed: 25, // m/s
       heading: 45, // degrees
       signalStrength: -60,
+      battery: 100,
       timestamp: Date.now(),
     },
     geofence: {
@@ -31,6 +32,7 @@ export const SCENARIOS: { [key: string]: Scenario } = {
       speed: 30, // m/s
       heading: 45,
       signalStrength: -55,
+      battery: 100,
       timestamp: Date.now(),
     },
     geofence: {
@@ -47,6 +49,7 @@ export const SCENARIOS: { [key: string]: Scenario } = {
       speed: 20,
       heading: 225,
       signalStrength: -70,
+      battery: 100,
       timestamp: Date.now(),
     },
     geofence: {

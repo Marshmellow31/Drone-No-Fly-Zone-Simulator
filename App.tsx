@@ -13,6 +13,7 @@ import { DroneIcon, WarningIcon } from './components/icons';
 export default function App() {
   const {
     telemetry,
+    friendlyDrones,
     simulationState,
     breachState,
     log,
@@ -42,7 +43,7 @@ export default function App() {
       <header className="bg-gray-800/50 backdrop-blur-sm border-b border-gray-700 p-2 z-30">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <DroneIcon className="w-8 h-8 text-cyan-400" />
+            <DroneIcon className="w-8 h-8 text-red-500" />
             <h1 className="text-xl font-bold tracking-tight text-white">Drone No-Fly Zone Simulator</h1>
           </div>
           <div className="bg-red-500/80 text-white px-3 py-1 rounded-md text-sm font-semibold flex items-center gap-2 shadow-lg">
@@ -54,8 +55,8 @@ export default function App() {
 
       <main className="flex-1 flex flex-col lg:flex-row p-4 gap-4 overflow-hidden">
         {/* Map and Controls Wrapper */}
-        <div className="h-4/5 lg:h-auto lg:flex-1 flex flex-col gap-4">
-          <Map telemetry={telemetry} geofence={geofence} breachState={breachState} />
+        <div className="flex-[3] lg:flex-1 flex flex-col gap-4 min-h-0">
+          <Map telemetry={telemetry} friendlyDrones={friendlyDrones} geofence={geofence} breachState={breachState} />
           <Controls
             simulationState={simulationState}
             onPlay={controls.play}

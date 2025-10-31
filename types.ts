@@ -11,6 +11,7 @@ export interface DroneTelemetry {
   speed: number; // in m/s
   heading: number; // in degrees, 0 is North
   signalStrength: number; // in dBm
+  battery: number; // percentage, 0-100
   timestamp: number;
 }
 

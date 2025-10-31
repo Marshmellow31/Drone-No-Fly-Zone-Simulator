@@ -1,0 +1,5 @@
+{
+  "name": "Drone No-Fly Zone Simulator",
+  "description": "A web-based simulation of a drone approaching a restricted no-fly zone, featuring a detection and mitigation system. This is a simulation only and does not interact with any real hardware.",
+  "requestFramePermissions": []
+}
